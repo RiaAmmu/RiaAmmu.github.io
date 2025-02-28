@@ -5221,32 +5221,32 @@ Created using IcoMoon - icomoon.io
   text-align: center;
   color: #fff; }
 
-/* References Style */
-.cc-reference .card {
+/* certifications Style */
+.cc-certifications .card {
   padding: 40px; }
 
-.cc-reference img {
-  height: 120px;
+.cc-certifications img {
+  height: auto;
   width: auto; }
 
-.cc-reference .h5 {
+.cc-certifications .h5 {
   margin: 0; }
 
-.cc-reference .carousel-indicators li {
+.cc-certifications .carousel-indicators li {
   background: #a5a3a3; }
 
-.cc-reference .carousel-indicators .active {
+.cc-certifications .carousel-indicators .active {
   background-color: #6c4979; }
 
-.cc-reference .carousel-inner {
+.cc-certifications .carousel-inner {
   box-shadow: none; }
 
 @media (max-width: 768px) {
-  .cc-reference .cc-reference-header {
+  .cc-certifications .cc-certifications-header {
     text-align: center; }
-  .cc-reference .carousel-indicators {
+  .cc-certifications .carousel-indicators {
     bottom: 0px; }
-  .cc-reference ol {
+  .cc-certifications ol {
     margin-bottom: 0; } }
 
 /* Contact Information Style */
@@ -5284,3 +5284,24 @@ a.credit {
 /* Common Style */
 .section {
   padding-bottom: 0; }
+
+  #myBtn {
+    display: inherit;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 50;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #6c4979;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+    color: white;
+  }

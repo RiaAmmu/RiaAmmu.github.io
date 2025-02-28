@@ -1,195 +1,279 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>MindWanderings</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+  <head>
+    <title>MindWanderings</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico" />
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<!-- <style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <!-- <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style> -->
-</head>
-<body class="w3-light-grey">
-  <style>
-    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-    /* Style the modal container */
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-}
+  </head>
+  <body class="w3-light-grey">
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Raleway", sans-serif;
+      }
+      /* Style the modal container */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      }
 
-/* Style the modal content */
-.modal-content {
-  background-color: #fff;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 600px;
-  position: relative;
-}
+      /* Style the modal content */
+      .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+        position: relative;
+      }
 
-/* Style the close button */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-  </style>  
-   <script>
-    // Get the modal
+      /* Style the close button */
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      // Get the modal
       var modal = document.getElementsByClassName("myModal");
 
       // Get the button that opens the modal
-      var btn = document.getElementById("w3-button w3-padding-large w3-white w3-border");
+      var btn = document.getElementById(
+        "w3-button w3-padding-large w3-white w3-border"
+      );
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
 
-      // When the user clicks the button, open the modal 
-      btn.onclick = function() {
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
         modal.style.display = "block";
-      }
+      };
 
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
+      span.onclick = function () {
         modal.style.display = "none";
-      }
+      };
 
       // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
-      }
-   </script>
+      };
+    </script>
 
-  <!-- w3-content defines a container for fixed size centered content, 
+    <!-- w3-content defines a container for fixed size centered content, 
   and is wrapped around the whole page content, except for the footer in this example -->
-  <div class="w3-content" style="max-width:1400px">
+    <div class="w3-content" style="max-width: 1400px">
+      <!-- Header -->
+      <header class="w3-container w3-center w3-padding-32">
+        <h1><b>MindWanderings</b></h1>
+        <p>
+          Welcome to the blog of
+          <span class="w3-tag">Exploration and Discovery</span>
+        </p>
+        <h2>"Exploring the Uncharted Realms of Thought"</h2>
+      </header>
 
-  <!-- Header -->
-  <header class="w3-container w3-center w3-padding-32"> 
-    <h1><b>MindWanderings</b></h1>
-    <p>Welcome to the blog of <span class="w3-tag">Exploration and Discovery</span></p>
-    <h2>"Exploring the Uncharted Realms of Thought"</h2>
-  </header>
+      <!-- Grid -->
+      <div class="w3-row">
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12">
+          <!-- Blog entry -->
+          <div class="w3-card-4 w3-margin w3-white">
+            <img
+              src="..\images\predictiveAnalytics.jpg"
+              alt="Norway"
+              style="width: 100%"
+              ,
+              height="250px"
+            />
+            <div class="w3-container">
+              <h3>
+                <b
+                  >The Power of Predictive Analytics in Business: How to
+                  Anticipate Market Trends</b
+                >
+              </h3>
+              <h5><span class="w3-opacity">September 16, 2023</span></h5>
+            </div>
 
-  <!-- Grid -->
-  <div class="w3-row">
-
-  <!-- Blog entries -->
-  <div class="w3-col l8 s12">
-
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="..\images\predictiveAnalytics.jpg" alt="Norway" style="width:100%", height="250px">
-      <div class="w3-container">
-        <h3><b>The Power of Predictive Analytics in Business: How to Anticipate Market Trends</b></h3>
-        <h5><span class="w3-opacity">September 16, 2023</span></h5>
-      </div>
-  
-      <div class="w3-container">
-        <p>Explore the transformative power of predictive analytics and learn how businesses can proactively anticipate market trends, make data-driven decisions, and gain a competitive edge in an ever-evolving marketplace. Discover real-world applications and the step-by-step process of implementing predictive analytics for enhanced decision-making and customer experiences.</p>
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-            <!-- Button to trigger the modal -->
-            <p><button id="modalBtn" class="w3-button w3-padding-large w3-white w3-border"><b>Read More »</b></button></p>
-
+            <div class="w3-container">
+              <p>
+                Explore the transformative power of predictive analytics and
+                learn how businesses can proactively anticipate market trends,
+                make data-driven decisions, and gain a competitive edge in an
+                ever-evolving marketplace. Discover real-world applications and
+                the step-by-step process of implementing predictive analytics
+                for enhanced decision-making and customer experiences.
+              </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <!-- Button to trigger the modal -->
+                  <p>
+                    <button
+                      id="modalBtn"
+                      class="w3-button w3-padding-large w3-white w3-border"
+                    >
+                      <b>Read More »</b>
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+          <hr />
+
+          <!-- Blog entry -->
+          <div class="w3-card-4 w3-margin w3-white">
+            <img
+              src="https://www.w3schools.com/w3images/woods.jpg"
+              alt="Nature"
+              style="width: 100%"
+            />
+            <div class="w3-container">
+              <h3>
+                <b>Chandrayaan 3.0: India's Lunar Odyssey Enhanced by AI</b>
+              </h3>
+              <h5><span class="w3-opacity">September 1, 2023</span></h5>
+            </div>
+            <div class="w3-container">
+              <p>
+                Explore India's recent Chandrayaan 3.0 mission and how
+                Artificial Intelligence is shaping the future of lunar
+                exploration, making missions more efficient and effective than
+                ever before. Discover the impact of AI on space exploration and
+                the exciting possibilities it presents for scientific discovery
+                and international collaboration.
+              </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <p>
+                    <button
+                      id="modalBtn2"
+                      class="w3-button w3-padding-large w3-white w3-border"
+                    >
+                      <b>READ MORE »</b>
+                    </button>
+                  </p>
+
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Modal Header</h2>
+                      </div>
+                      <div class="modal-body">
+                        <p>Some text in the Modal Body</p>
+                        <p>Some other text...</p>
+                      </div>
+                      <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <!-- Blog entry -->
+          <div class="w3-card-4 w3-margin w3-white">
+            <img
+              src="https://www.w3schools.com/w3images/bridge.jpg"
+              alt="Norway"
+              style="width: 100%"
+            />
+            <div class="w3-container">
+              <h3><b>Exploring New Horizons: Wanderlust Wonders</b></h3>
+              <h5><span class="w3-opacity">August 29, 2023</span></h5>
+            </div>
+
+            <div class="w3-container">
+              <p>
+                <b>How Traveling Transforms Your Daily Life:</b> Explore the
+                incredible ways in which traveling to new places can enrich your
+                daily life, from broadened perspectives and personal growth to
+                enhanced creativity and stronger relationships. Discover the
+                transformative power of wanderlust and its lasting impact on
+                your everyday routines.
+              </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <p>
+                    <button
+                      class="w3-button w3-padding-large w3-white w3-border"
+                    >
+                      <b>READ MORE »</b>
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END BLOG ENTRIES -->
         </div>
-      </div>
-    </div>
-    <hr>
 
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="https://www.w3schools.com/w3images/woods.jpg" alt="Nature" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Chandrayaan 3.0: India's Lunar Odyssey Enhanced by AI</b></h3>
-      <h5><span class="w3-opacity">September 1, 2023</span></h5>
-    </div>
-    <div class="w3-container">
-      <p>Explore India's recent Chandrayaan 3.0 mission and how Artificial Intelligence is shaping the future of lunar exploration, making missions more efficient and effective than ever before. Discover the impact of AI on space exploration and the exciting possibilities it presents for scientific discovery and international collaboration.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button id="modalBtn2" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        <!-- Introduction menu -->
+        <div class="w3-col l4">
+          <!-- About Card -->
+          <div class="w3-card w3-margin w3-margin-top">
+            <img src="../images/Ria Ammu.png" style="width: 100%" />
+            <div class="w3-container w3-white">
+              <h4><b>Hi! My Name is Ria Ammu.</b></h4>
+              <p>
+                <b
+                  >In this blog, you will find a collection of articles,
+                  insights, and experiences on various topics that I am
+                  passionate about. From technology and coding to lifestyle and
+                  personal growth, I aim to share valuable information and
+                  inspire readers through my words.</b
+                >
+              </p>
+              <p>
+                Join me on this journey as we explore the fascinating world of
+                exploration. Whether you are a fellow developer, a curious
+                learner, or someone seeking inspiration, I hope you find
+                something valuable in these articles.
+              </p>
+              <p>
+                Feel free to engage, comment, and share your thoughts as we
+                embark on this blogging adventure together. Stay tuned for
+                regular updates, new articles, and exciting discussions.
+              </p>
+            </div>
+          </div>
+          <hr />
 
-          <!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Modal Header</h2>
-    </div>
-    <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div>
-  </div>
-
-</div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
-
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-  <img src="https://www.w3schools.com/w3images/bridge.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Exploring New Horizons: Wanderlust Wonders</b></h3>
-      <h5><span class="w3-opacity">August 29, 2023</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p><b>How Traveling Transforms Your Daily Life:</b> Explore the incredible ways in which traveling to new places can enrich your daily life, from broadened perspectives and personal growth to enhanced creativity and stronger relationships. Discover the transformative power of wanderlust and its lasting impact on your everyday routines.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- END BLOG ENTRIES -->
-</div>
-
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-  <img src="../images/Ria Ammu.png" style="width:100%">
-    <div class="w3-container w3-white">
-      <h4><b>Hi! My Name is Ria Ammu.</b></h4>
-      <p><b>In this blog, you will find a collection of articles, insights, and experiences on various topics that I am passionate about.
-         From technology and coding to lifestyle and personal growth, I aim to share valuable information and inspire readers through my words.</b></p>
-        <p>Join me on this journey as we explore the fascinating world of exploration. Whether you are a fellow developer, 
-          a curious learner, or someone seeking inspiration, I hope you find something valuable in these articles. </p>
-         <p> Feel free to engage, comment, and share your thoughts as we embark on this blogging adventure together.
-        Stay tuned for regular updates, new articles, and exciting discussions.</p>
-    </div>
-  </div><hr>
-  
-  <!-- Posts -->
-  <!-- <div class="w3-card w3-margin">
+          <!-- Posts -->
+          <!-- <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
       <h4>Popular Posts</h4>
     </div>
@@ -216,36 +300,73 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       </li>  
     </ul>
   </div> -->
-  <hr> 
- 
-  <!-- Labels / tags -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Tags</h4>
+          <hr />
+
+          <!-- Labels / tags -->
+          <div class="w3-card w3-margin">
+            <div class="w3-container w3-padding">
+              <h4>Tags</h4>
+            </div>
+            <div class="w3-container w3-white">
+              <p>
+                <span class="w3-tag w3-black w3-margin-bottom">Technology</span>
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >World</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >Machine Learning</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >Artificial Intelligence</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >India</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >DIY</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >Ideas</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >Space</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >Pchyology</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >News</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >Coding</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >Science</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >Sports</span
+                >
+                <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"
+                  >Games</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- END Introduction Menu -->
+        </div>
+
+        <!-- END GRID -->
+      </div>
+      <br />
+
+      <!-- END w3-content -->
     </div>
-    <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Technology</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">World</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Machine Learning</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Artificial Intelligence</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">India</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Space</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pchyology</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Coding</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Science</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
-    </p>
-    </div>
-  </div>
-  
-<!-- END Introduction Menu -->
-</div>
 
-<!-- END GRID -->
-</div><br>
-
-<!-- END w3-content -->
-</div>
-
-<!-- Footer.-->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <p class="w3-small"></p>
-  <!-- End footer. -->
-  </footer>
-</body>
+    <!-- Footer.-->
+    <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+      <p class="w3-small"></p>
+      <!-- End footer. -->
+    </footer>
+  </body>
 </html>
